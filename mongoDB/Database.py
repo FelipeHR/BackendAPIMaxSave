@@ -39,24 +39,23 @@ def insert_gasto():
 
     print(request.json)
     return {'message': 'Gasto Insertado'}
-
+'''
 @app.route('/getGastosFecha', methods=['GET'])
 def get_gasto_fecha(data):
     
     if data:
-        bruh
 
     else:
         return {'message': 'ERROR!'}
 
     print(request.json)
     return {'message': 'Gastos Encontrados'}
-
+'''
 '''
 if __name__ == "__main__":
     app.run(debug=True)
 '''
 
-if __name__ == "main":
+if name == "main":
     from waitress import serve
     serve(app, host="0.0.0.0", port=8080)
